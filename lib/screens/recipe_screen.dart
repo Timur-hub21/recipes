@@ -102,6 +102,7 @@ class _RecipeScreenState extends State<RecipeScreen> {
             )),
             backgroundColor: Colors.deepPurple,
             title: const Text('Recepts'),
+            centerTitle: true,
             floating: true,
             pinned: false,
           ),

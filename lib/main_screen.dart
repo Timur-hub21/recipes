@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_new_app/screens/profile_screen.dart';
 import 'package:my_new_app/screens/recipe_screen.dart';
+import 'package:my_new_app/screens/your_recipes.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -13,6 +14,7 @@ class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
   final _screens = [
     const RecipeScreen(),
+    const YourRecipesScreen(),
     const ProfileScreen(),
   ];
 
@@ -31,6 +33,10 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.local_pizza),
             label: 'Recepts',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.cookie_sharp),
+            label: 'Your Recepts',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
